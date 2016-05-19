@@ -6,6 +6,9 @@ package Das.Manjusha;
 public class PhoneBookApp {
 
     public static void main(String[] args) {
-
+        PhoneBook phoneBook = new PhoneBook();
+        Contacts manjusha = new Contacts("Manjusha Das");
+        phoneBook.addContact("Manjusha",manjusha);
+        phoneBook.lookupContact("Manjusha");
     }
 }

@@ -15,7 +15,7 @@ public class ContactTest {
 
         newContacts.addPhoneNumber("302-256-8190");
 
-        int actualNumberOfentries = newContacts.getNumberOfentries();
+        int actualNumberOfentries = newContacts.getNumberOfphoneNumbers();
         int expectedNumberOfentries = 1;
         assertEquals(expectedNumberOfentries, actualNumberOfentries);
 
@@ -33,9 +33,9 @@ public class ContactTest {
         Contacts newContacts = new Contacts("Manjusha");
 
         newContacts.addPhoneNumber("302-256-8190");
-        newContacts.removePhoneNumber(1);
+        newContacts.removePhoneNumber("302-256-8190");
 
-        int actualNumberOfentries = newContacts.getNumberOfentries();
+        int actualNumberOfentries = newContacts.getNumberOfphoneNumbers();
         int expectedNumberOfEntries = 0;
         assertEquals(expectedNumberOfEntries, actualNumberOfentries);
 
